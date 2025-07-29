@@ -3,6 +3,8 @@ import {Address, NetworkEnum} from '@1inch/fusion-sdk'
 const TrueERC20 = new Address('0xda0000d4000015a526378bb6fafc650cea5966f8')
 const ZKTrueERC20 = new Address('0xd66097c27eb8dee404bac235737932260edc6f3b')
 
+const SepoliaERC20 = new Address('0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14'); // Perhaps enter the Sepolia ERC20 address?
+
 export const TRUE_ERC20 = {
     [NetworkEnum.ETHEREUM]: TrueERC20,
     [NetworkEnum.POLYGON]: TrueERC20,
@@ -16,7 +18,8 @@ export const TRUE_ERC20 = {
     [NetworkEnum.ZKSYNC]: ZKTrueERC20,
     [NetworkEnum.LINEA]: TrueERC20,
     [NetworkEnum.SONIC]: TrueERC20,
-    [NetworkEnum.UNICHAIN]: TrueERC20
+    [NetworkEnum.UNICHAIN]: TrueERC20,
+    [NetworkEnum.SEPOLIA]: SepoliaERC20,
 }
 
 const ESCROW_FACTORY_ADDRESS = new Address(
@@ -38,6 +41,11 @@ const ESCROW_ZK_DST_IMPLEMENTATION_ADDRESS = new Address(
     '0xdc4ccc2fc2475d0ed3fddd563c44f2bf6a3900c9'
 )
 
+// TODO: add sepolia addresses
+const SEPOLIA_ESCROW_FACTORY_ADDRESS = new Address('0');
+const SEPOLIA_ESCROW_SRC_ADDRESS = new Address('0');
+const SEPOLIA_ESCROW_DST_ADDRESS = new Address('0');
+
 export const ESCROW_SRC_IMPLEMENTATION = {
     [NetworkEnum.ETHEREUM]: ESCROW_SRC_IMPLEMENTATION_ADDRESS,
     [NetworkEnum.POLYGON]: ESCROW_SRC_IMPLEMENTATION_ADDRESS,
@@ -51,7 +59,8 @@ export const ESCROW_SRC_IMPLEMENTATION = {
     [NetworkEnum.ZKSYNC]: ESCROW_ZK_SRC_IMPLEMENTATION_ADDRESS,
     [NetworkEnum.LINEA]: ESCROW_SRC_IMPLEMENTATION_ADDRESS,
     [NetworkEnum.SONIC]: ESCROW_SRC_IMPLEMENTATION_ADDRESS,
-    [NetworkEnum.UNICHAIN]: ESCROW_SRC_IMPLEMENTATION_ADDRESS
+    [NetworkEnum.UNICHAIN]: ESCROW_SRC_IMPLEMENTATION_ADDRESS,
+    [NetworkEnum.SEPOLIA]: SEPOLIA_ESCROW_SRC_ADDRESS,
 }
 
 export const ESCROW_DST_IMPLEMENTATION = {
@@ -67,7 +76,8 @@ export const ESCROW_DST_IMPLEMENTATION = {
     [NetworkEnum.ZKSYNC]: ESCROW_ZK_DST_IMPLEMENTATION_ADDRESS,
     [NetworkEnum.LINEA]: ESCROW_DST_IMPLEMENTATION_ADDRESS,
     [NetworkEnum.SONIC]: ESCROW_DST_IMPLEMENTATION_ADDRESS,
-    [NetworkEnum.UNICHAIN]: ESCROW_DST_IMPLEMENTATION_ADDRESS
+    [NetworkEnum.UNICHAIN]: ESCROW_DST_IMPLEMENTATION_ADDRESS,
+    [NetworkEnum.SEPOLIA]: SEPOLIA_ESCROW_DST_ADDRESS,
 }
 
 export const ESCROW_FACTORY = {
@@ -83,5 +93,6 @@ export const ESCROW_FACTORY = {
     [NetworkEnum.ZKSYNC]: ESCROW_ZK_FACTORY_ADDRESS,
     [NetworkEnum.LINEA]: ESCROW_FACTORY_ADDRESS,
     [NetworkEnum.SONIC]: ESCROW_FACTORY_ADDRESS,
-    [NetworkEnum.UNICHAIN]: ESCROW_FACTORY_ADDRESS
+    [NetworkEnum.UNICHAIN]: ESCROW_FACTORY_ADDRESS,
+    [NetworkEnum.SEPOLIA]: SEPOLIA_ESCROW_FACTORY_ADDRESS,
 }
