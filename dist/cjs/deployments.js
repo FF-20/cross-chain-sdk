@@ -27,10 +27,9 @@ const ESCROW_SRC_IMPLEMENTATION_ADDRESS = new fusion_sdk_1.Address('0xcd70bf33cf
 const ESCROW_ZK_SRC_IMPLEMENTATION_ADDRESS = new fusion_sdk_1.Address('0xddc60c7babfc55d8030f51910b157e179f7a41fc');
 const ESCROW_DST_IMPLEMENTATION_ADDRESS = new fusion_sdk_1.Address('0x9c3e06659f1c34f930ce97fcbce6e04ae88e535b');
 const ESCROW_ZK_DST_IMPLEMENTATION_ADDRESS = new fusion_sdk_1.Address('0xdc4ccc2fc2475d0ed3fddd563c44f2bf6a3900c9');
-// TODO: add sepolia addresses
-const SEPOLIA_ESCROW_FACTORY_ADDRESS = new fusion_sdk_1.Address('0');
-const SEPOLIA_ESCROW_SRC_ADDRESS = new fusion_sdk_1.Address('0');
-const SEPOLIA_ESCROW_DST_ADDRESS = new fusion_sdk_1.Address('0');
+const SEPOLIA_ESCROW_FACTORY_ADDRESS = new fusion_sdk_1.Address('0x718B8f5c8C1A9bd20b8f3cB347b7CD661A7694B1');
+const SEPOLIA_ESCROW_SRC_ADDRESS = new fusion_sdk_1.Address('0x7eF74B700eca505cBC5Bf8A37Db7b5f29e7cDd51');
+const SEPOLIA_ESCROW_DST_ADDRESS = new fusion_sdk_1.Address('0x1B30989e3AfDc08bf8C026f213AC2E6E8B7c3b35');
 exports.ESCROW_SRC_IMPLEMENTATION = {
     [fusion_sdk_1.NetworkEnum.ETHEREUM]: ESCROW_SRC_IMPLEMENTATION_ADDRESS,
     [fusion_sdk_1.NetworkEnum.POLYGON]: ESCROW_SRC_IMPLEMENTATION_ADDRESS,
